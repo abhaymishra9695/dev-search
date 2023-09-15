@@ -80,15 +80,10 @@ WSGI_APPLICATION = 'DevMash.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'railway',
-        'USER': 'root',
-        'PASSWORD': 'QF2qynfmZqCp0aiUhV65',
-        'HOST':'containers-us-west-160.railway.app',
-        'PORT':'6768',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
