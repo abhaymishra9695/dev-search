@@ -82,10 +82,15 @@ WSGI_APPLICATION = 'DevMash.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'railway',
+        'USER': 'postgres',
+        'PASSWORD': '2dOsefkqL3Rq2rPcFMEE',
+        'HOST': 'containers-us-west-104.railway.app',
+        'PORT': '7866',
     }
 }
+
 
 
 # Password validation
